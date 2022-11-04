@@ -1,0 +1,68 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.MainWrapper {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+}
+.first {
+  height: 100%;
+  border: 2px solid yellow;
+  margin: 10px;
+  display: flex;
+  position: relative;
+}
+.first .dish {
+  right: 15%;
+  top: 130px;
+  position: absolute;
+  height: 60%;
+  width: 30%;
+  object-fit: cover;
+  z-index: 2;
+}
+.first .lettuce {
+  position: absolute;
+  right: 13%;
+  top: 6px;
+  height: 60%;
+  width: 25%;
+  z-index: 1;
+}
+.white {
+  width: 70%;
+  background-color: white;
+}
+.white > header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px 0 30px;
+}
+.red {
+  width: 30%;
+  background-color: red;
+  display: flex;
+}
+
+.red > img {
+  height: 50px;
+  width: 50px;
+  margin-left: 40%;
+  margin-right: 10px;
+}
+.location {
+  display: flex;
+  color: white;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 0px 20px 0px 20px;
+}
