@@ -23,7 +23,7 @@ const SectionThree = () => {
         {/* <img className="mobile" src="/assets/mobile.png" alt="" />
         <img className="mobileinside" src="/assets/mobileinsider.png" alt="" />
         <img className="mobilebehind" src="/assets/mobilebehind..png" alt="" /> */}
-        <img src="" alt="" />
+        <img src="/assets/mobilefull.PNG" alt="" />
       </div>
     </div>
   );

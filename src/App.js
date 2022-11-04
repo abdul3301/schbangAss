@@ -4,7 +4,7 @@ import SectionTwo from "./SectionTwo";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ width: "100%" }}>
       <div style={{ height: "100vh" }}>
         <MainPage />
       </div>

@@ -1,0 +1,194 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  padding: 30px 40px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.container .top_section {
+  width: 75%;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .top_section .top_section_left {
+  display: flex;
+  gap: 10px;
+  width: 40%;
+  height: 45%;
+  align-items: center;
+}
+.container .top_section .top_section_left .top_section_left_border {
+  width: 10px;
+  height: 100%;
+  background: red;
+}
+.container .top_section .top_section_left span {
+  font-size: 40px;
+  width: 100px;
+  font-family: sans-serif;
+  line-height: 38px;
+}
+.container .top_section .top_section_right {
+  width: 40%;
+}
+
+.container .body_section {
+  width: 90%;
+  height: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .body_section .left_body_section {
+  width: 60%;
+  height: 100%;
+}
+.container .body_section .left_body_section .left_body_section_first_row,
+.container .body_section .left_body_section .left_body_section_second_row {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.left_body_section_first_row_first_column,
+.left_body_section_second_row_second_column {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffedde;
+}
+
+.left_body_section_first_row_second_column,
+.left_body_section_second_row_first_column {
+  width: 45%;
+  height: 100%;
+  color: #2e266f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+.left_body_section_first_row_second_column h2,
+.left_body_section_second_row_first_column h2 {
+  width: 60%;
+  margin: 0 !important;
+}
+.left_body_section_second_row_first_column h2 {
+  position: relative;
+}
+
+.left_body_section_first_row_second_column h2::after {
+  position: relative;
+  content: "___";
+  color: red;
+  margin-left: 10px;
+  top: -10px;
+}
+.left_body_section_second_row_first_column_content {
+  display: flex;
+  flex-direction: column;
+}
+.left_body_section_second_row_first_column_content h2 {
+  margin: 0 !important;
+}
+.left_body_section_second_row_first_column_content .hour::before {
+  position: relative;
+  content: "________";
+  color: red;
+  margin-right: 10px;
+  top: -10px;
+}
+.left_body_section_first_row_second_column h2::before {
+  position: absolute;
+  content: "_________";
+  color: red;
+  left: 290px;
+  top: 70px;
+}
+.left_body_section_second_row_first_column .food::after {
+  position: absolute;
+  content: "_________";
+  color: red;
+  left: 330px;
+  top: 50px;
+}
+
+.container .body_section .right_body_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background: #ffedde;
+  gap: 10px;
+}
+
+.container .body_section .right_body_section p {
+  width: 60%;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.container .body_section .right_body_section h2 {
+  width: 60%;
+  color: #2e266f;
+  margin: 0 !important;
+}
+
+.container .body_section .right_body_section img {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+
+    height: fit-content;
+  }
+  h2 {
+    font-size: 16px;
+    width: fit-content !important;
+  }
+  .top_section {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .top_section_left {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+  .top_section_left span {
+    width: fit-content !important;
+    border-bottom: 4px solid red;
+  }
+  .top_section_left_border {
+    display: none;
+  }
+  .top_section_right {
+    width: 100% !important;
+    text-align: center;
+  }
+  .body_section {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .left_body_section,
+  .right_body_section {
+    width: 100% !important;
+  }
+}
