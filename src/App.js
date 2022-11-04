@@ -1,4 +1,3 @@
-import SectionFourth from "./SectionFourth";
 import MainPage from "./SectionOne";
 import SectionThree from "./SectionThree";
 import SectionTwo from "./SectionTwo";
@@ -14,9 +13,6 @@ function App() {
       </div>
       <div style={{ height: "100vh" }}>
         <SectionThree />
-      </div>
-      <div style={{ height: "100vh" }}>
-        <SectionFourth />
       </div>
     </div>
   );

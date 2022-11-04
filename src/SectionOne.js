@@ -10,23 +10,32 @@ const MainPage = () => {
           <img className="lettuce" src="/assets/lettuce.png" alt="" />
           <div className="white">
             <header className="header">
-              <p>Eatiz</p>
+              <img src="/assets/logo.png" alt="" />
+
               <p>Menu One</p>
               <p>Menu Two</p>
               <p>Menu Three</p>
               <p>Menu Four</p>
             </header>
             <div className="heading">
-              <h2>Discover Restaurant</h2>
-              <h2> & Delicious Food </h2>
+              <h2>
+                Discover Restaurant <br />& Delicious Food
+              </h2>
+              <br />
+
+              <input
+                placeholder="Search Food, Restaurants"
+                type="text"
+                className="headingInput"
+              />
+              <button>GO</button>
             </div>
-            <input type="text" className="headingInput" />
             <div className="location">
               <p>Location</p>
             </div>
           </div>
           <div className="red">
-            <img src="UserImage" alt="" />
+            <img src="/assets/Mask.png" alt="" />
             <p>user</p>
           </div>
         </div>
